@@ -1,15 +1,18 @@
 // Fonts 
 
-@sans: "Roboto Regular";
-@sans_italic:"Roboto Italic";
-@sans_bold: "Roboto Bold";
-@sans_bold_italic: "Roboto Bold Italic";
+@sans_thin: "Roboto Thin","Arial Unicode MS Regular";
+@sans_thin_italic: "Roboto Light Italic","Arial Unicode MS Regular";
+  
+@sans: "Roboto Regular","Arial Unicode MS Regular";
+@sans_italic:"Roboto Italic","Arial Unicode MS Regular";
+@sans_bold: "Roboto Bold","Arial Unicode MS Regular";
+@sans_bold_italic: "Roboto Bold Italic","Arial Unicode MS Regular";
 
 // Languages: name (local), name_en, name_fr, name_es, name_de
 @name: '[name]';
 
 // Common Colors //
-@water: #fff;
+@water: #2df * .6;
 @park: #f04;
 @land: lighten(#edb,5); //#F8E7BE;
 
@@ -18,53 +21,58 @@ Map {
 }
 
 #water {
-  b/polygon-fill: #2df;
-  b/polygon-opacity: .25;
-  b/polygon-comp-op: multiply;
-  b/line-color: #2df * .6;
-  b/line-width: 4;
-  b/line-comp-op: multiply;
+  ::line {
+    line-color: @water;
+    line-width: 3;
+    line-join: miter;
+    [zoom>=9] { line-width: 5; }
+    [zoom>=12] { line-width: 6; }
+    line-comp-op: multiply;
+  }
+  polygon-pattern-file:  url(img/water_paper.png);
 }
 
-//#waterway { line-color: @water; }
+#waterway {
+  line-width: .5;
+  line-color: @water;
+  line-comp-op: multiply;
+}
 
-// cemetery, hospital, industrial, park, parking, pitch, sand, school, wood
-
-
-#landuse { 
+#landuse[class!='agriculture']{ 
   [class='park'],[class='wood'],[class='scrub'],
     [class='pitch'],[class='grass']  { 
     polygon-fill: #f04;
-    line-color: #f04 * .5;
+    line-color: #f04 * .8;
   }
   [class='industrial'],[class='parking'],
     [class='school'],[class='hospital'] {
     polygon-fill: #df2;
     line-color: #df2 * .5;
   }
-  line-color: #2df * .5;
-  line-comp-op: multiply;
-  polygon-fill: #2df;
-  polygon-comp-op: multiply;
+  [class='cemetery'] {
+    polygon-fill: #2df;
+    line-color: #2df * .8;
+  }
+  comp-op: multiply;
+  comp-op: multiply;
   [zoom>15] { line-width:2; }
 }
 
 #landuse_overlay { polygon-fill: #2df; comp-op:multiply; }
 
 #building {
-  polygon-fill: #2df;
-  [zoom>=15] { polygon-geometry-transform: translate(-1,-1); }
-  [zoom>=17] { polygon-geometry-transform: translate(-2,-2); }
+  ::blue {
+    polygon-fill: #2df;
+    [zoom>=15] { polygon-geometry-transform: translate(-1,-2); }
+    [zoom>=17] { polygon-geometry-transform: translate(-2,-1); }
+  }
   ::red {
     polygon-fill: #f07;
     polygon-comp-op:multiply;
     [zoom>=15] { polygon-geometry-transform: translate(1,1); }
     [zoom>=17] { polygon-geometry-transform: translate(2,2); }
   }
-  ::black {
-    polygon-fill: #000;
-    polygon-comp-op:multiply;
-  }
+  ::black { polygon-fill: #000; }
 }
 
 #aeroway {
@@ -83,19 +91,20 @@ Map {
   line-color: @land;
   line-width:0;
   [class='motorway'] {
-    line-width: 3 + 4;
-    [zoom=14] { line-width: 4 + 4; }
-    [zoom=15] { line-width: 5 + 4; }
-    [zoom=16] { line-width: 6 + 4; }
-    [zoom=17] { line-width: 8 + 4; }
-    [zoom=18] { line-width: 10 + 4; }
+    line-width: 7;
+    [zoom=14] { line-width: 8; }
+    [zoom=15] { line-width: 9; }
+    [zoom=16] { line-width: 10; }
+    [zoom=17] { line-width: 12; }
+    [zoom=18] { line-width: 14; }
   }
   [class='main'] { 
-    line-width: 2 + 4;
-    [zoom>16] { line-width: 3 + 4; }
+    line-width: 0;
+    [zoom>8] { line-width: 6; }
+    [zoom>16] { line-width: 7; }
   }
   [zoom>13][class='street'] {
-    line-width: 1 + 3; 
+    line-width: 4; 
   }
 }
 
