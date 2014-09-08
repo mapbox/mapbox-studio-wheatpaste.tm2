@@ -1,0 +1,27 @@
+_prefs: 
+  saveCenter: true
+_properties: {}
+attribution: <a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -122.41475343704224
+  - 37.777982429910466
+  - 17
+description: ''
+format: "png8:m=h:c=128"
+interactivity_layer: ''
+maxzoom: 22
+minzoom: 0
+mtime: 1382395204640
+name: wheatpaste
+scale: 1
+source: "mapbox:///aj.mapbox-streets-outdoors-sf"
+styles: 
+  - style.mss
+  - terrain.mss
+  - label.mss
+template: ''
