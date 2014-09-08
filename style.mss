@@ -1,12 +1,9 @@
 // Fonts 
+@serif_bold: "Elementa Rough Pro Bold","Arial Unicode MS Regular";
 
-@sans_thin: "Roboto Thin","Arial Unicode MS Regular";
-@sans_thin_italic: "Roboto Light Italic","Arial Unicode MS Regular";
-  
-@sans: "Roboto Regular","Arial Unicode MS Regular";
-@sans_italic:"Roboto Italic","Arial Unicode MS Regular";
 @sans_bold: "Roboto Bold","Arial Unicode MS Regular";
 @sans_bold_italic: "Roboto Bold Italic","Arial Unicode MS Regular";
+@sans_black_italic: "Roboto Black Italic","Arial Unicode MS Regular";
 
 // Languages: name (local), name_en, name_fr, name_es, name_de
 @name: '[name]';
@@ -37,28 +34,6 @@ Map {
   line-color: @water;
   line-comp-op: multiply;
 }
-
-#landuse[class!='agriculture']{ 
-  [class='park'],[class='wood'],[class='scrub'],
-    [class='pitch'],[class='grass']  { 
-    polygon-fill: #f04;
-    line-color: #f04 * .8;
-  }
-  [class='industrial'],[class='parking'],
-    [class='school'],[class='hospital'] {
-    polygon-fill: #df2;
-    line-color: #df2 * .5;
-  }
-  [class='cemetery'] {
-    polygon-fill: #2df;
-    line-color: #2df * .8;
-  }
-  comp-op: multiply;
-  comp-op: multiply;
-  [zoom>15] { line-width:2; }
-}
-
-#landuse_overlay { polygon-fill: #2df; comp-op:multiply; }
 
 #building {
   ::blue {
