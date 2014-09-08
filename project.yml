@@ -1,5 +1,6 @@
 _prefs: 
-  saveCenter: true
+  mapid: ''
+  saveCenter: false
 _properties: {}
 attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
 bounds: 
@@ -8,15 +9,15 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -122.41475343704224
-  - 37.777982429910466
-  - 17
+  - 28.911895751953125
+  - 41.06071514018663
+  - 10
 description: ''
 format: "png8:m=h:c=128"
 interactivity_layer: ''
+layers: null
 maxzoom: 22
 minzoom: 0
-mtime: 1382395204640
 name: wheatpaste
 source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
 styles: 
