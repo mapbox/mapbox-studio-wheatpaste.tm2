@@ -1,6 +1,6 @@
 {
     "name": "mapbox-studio-wheatpaste",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Wheatpaste",
     "main": "./package.json"
 }
