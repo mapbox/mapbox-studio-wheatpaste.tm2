@@ -9,8 +9,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 28.911895751953125
-  - 41.06071514018663
+  - 28.9119
+  - 41.0607
   - 10
 description: ''
 format: "png8:m=h:c=128"
@@ -19,7 +19,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: wheatpaste
-source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
   - terrain.mss

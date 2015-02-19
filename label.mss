@@ -1,8 +1,5 @@
 
 // --- admin labels ------------------------------
-#country_label_line {
-  line-width:8;
-}
 
 #country_label {
   text-name: @name;

@@ -25,6 +25,7 @@ Map {
     [zoom>=9] { line-width: 5; }
     [zoom>=12] { line-width: 6; }
     line-comp-op: multiply;
+    line-clip: false;
   }
   polygon-pattern-file:  url(img/water_paper.png);
 }
@@ -65,6 +66,7 @@ Map {
 #tunnel::case {
   line-color: @land;
   line-width:0;
+  line-join: round;
   [class='motorway'] {
     line-width: 7;
     [zoom=14] { line-width: 8; }

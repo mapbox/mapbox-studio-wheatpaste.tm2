@@ -5,12 +5,12 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">28.911895751953125,41.06071514018663,10</Parameter>
+  <Parameter name="center">28.9119,41.0607,10</Parameter>
   <Parameter name="format">png8:m=h:c=128</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[wheatpaste]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6]]></Parameter>
 </Parameters>
 
 <FontSet name="fontset-0">
@@ -295,16 +295,16 @@
 <Style name="water-line" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="6" stroke="#148599" stroke-linejoin="miter" comp-op="multiply" />
+    <LineSymbolizer stroke-width="6" stroke="#148599" stroke-linejoin="miter" comp-op="multiply" clip="false" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="5" stroke="#148599" stroke-linejoin="miter" comp-op="multiply" />
+    <LineSymbolizer stroke-width="5" stroke="#148599" stroke-linejoin="miter" comp-op="multiply" clip="false" />
   </Rule>
   <Rule>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <LineSymbolizer stroke="#148599" stroke-width="3" stroke-linejoin="miter" comp-op="multiply" />
+    <LineSymbolizer stroke="#148599" stroke-width="3" stroke-linejoin="miter" comp-op="multiply" clip="false" />
   </Rule>
 </Style>
 <Layer name="water"
@@ -461,65 +461,65 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Style name="tunnel" filter-mode="first" opacity="0.25">
@@ -611,65 +611,65 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Layer name="road"
@@ -758,65 +758,65 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="4" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([class] = 'street')</Filter>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="6" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([class] = 'main')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="0" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="14" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="12" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="10" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="9" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="8" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([class] = 'motorway')</Filter>
-    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" />
+    <LineSymbolizer stroke-width="7" stroke="#f3e7cf" stroke-linejoin="round" />
   </Rule>
   <Rule>
-    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" />
+    <LineSymbolizer stroke="#f3e7cf" stroke-width="0" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Layer name="bridge"
@@ -827,15 +827,6 @@
 <Layer name="admin"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
-
-<Style name="country_label_line" filter-mode="first">
-  <Rule>
-    <LineSymbolizer stroke-width="8" />
-  </Rule>
-</Style>
-<Layer name="country_label_line"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>country_label_line</StyleName>  </Layer>
 
 <Style name="country_label" filter-mode="first">
   <Rule>
@@ -1043,12 +1034,6 @@
 
 <Style name="poi_label" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
-    <TextSymbolizer fontset-name="fontset-1" size="20" text-transform="uppercase" halo-fill="#f3e7cf" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
-    <MarkersSymbolizer width="8" fill="#000000" stroke="#f3e7cf" stroke-width="3" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([scalerank] = 3) and ([type] = 'Aerodrome')</Filter>
     <TextSymbolizer fontset-name="fontset-1" size="20" text-transform="uppercase" halo-fill="#f3e7cf" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
@@ -1057,6 +1042,12 @@
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([scalerank] = 1) and ([type] = 'Aerodrome')</Filter>
+    <TextSymbolizer fontset-name="fontset-1" size="20" text-transform="uppercase" halo-fill="#f3e7cf" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
+    <MarkersSymbolizer width="8" fill="#000000" stroke="#f3e7cf" stroke-width="3" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([scalerank] = 2) and ([type] = 'Aerodrome')</Filter>
     <TextSymbolizer fontset-name="fontset-1" size="20" text-transform="uppercase" halo-fill="#f3e7cf" halo-radius="3" halo-rasterizer="fast" avoid-edges="true" wrap-width="80" placement-type="simple" line-spacing="-8" placements="NE, SE, NW, SW" dx="5" ><![CDATA['[ ' + [ref] + ' ]']]></TextSymbolizer>
     <MarkersSymbolizer width="8" fill="#000000" stroke="#f3e7cf" stroke-width="3" />
   </Rule>
