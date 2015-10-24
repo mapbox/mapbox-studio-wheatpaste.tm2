@@ -19,7 +19,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: wheatpaste
-source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v6"
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6"
 styles: 
   - style.mss
   - terrain.mss

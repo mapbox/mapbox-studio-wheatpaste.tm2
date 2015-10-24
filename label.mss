@@ -73,7 +73,10 @@
   [zoom>=14] { text-size: 24; }
   }
 
-#place_label[zoom>=11][type!='city'][type!='town'] {
+#place_label[zoom>=11][type='hamlet'],
+#place_label[zoom>=12][type='suburb'],
+#place_label[zoom>=13][type='neighbourhood'],
+#place_label[zoom>=13][type='village'] {
   text-name: @name;
   text-face-name: @sans_bold;
   text-halo-fill: @land;
