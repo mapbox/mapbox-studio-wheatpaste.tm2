@@ -75,7 +75,7 @@ Map {
     [zoom=17] { line-width: 12; }
     [zoom=18] { line-width: 14; }
   }
-  [class='main'] { 
+  [class='main'][zoom>6] {
     line-width: 0;
     [zoom>8] { line-width: 6; }
     [zoom>16] { line-width: 7; }
@@ -100,7 +100,7 @@ Map {
     [zoom=17] { line-width: 8; }
     [zoom=18] { line-width: 10; }
   }
-  [class='main'] { 
+  [class='main'][zoom>6] {
     line-width: 2;
     [zoom>16] { line-width: 3; }
   }
