@@ -2,5 +2,9 @@
   "name": "@mapbox/mapbox-studio-wheatpaste",
   "version": "3.0.3",
   "description": "Wheatpaste",
-  "main": "./package.json"
+  "main": "./package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapbox/mapbox-studio-wheatpaste.tm2.git"
+  }
 }
